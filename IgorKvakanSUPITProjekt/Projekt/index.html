@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FrontPage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  -->
+    <script src="page.js"></script>
+    <link href="indexStyle.css" rel="stylesheet">
+    
+    
+   
+      
+    
+    
+
+    <script>
+        function validateForm(){
+            
+            var name=$("#txt-name").val();
+            var email=$("#txt-email").val();
+            var valueImportance=$("#ddlSelect").val();
+            var newsLetter=$("#cbChecked").val();
+
+            if (name=="" ||  email=="" || valueImportance=="" || newsLetter=="" ) {
+                alert("Potrebno popuniti sva polja !");
+               $("#txt-name").focus();
+              
+                return false;
+            }
+
+            else{
+                return true;
+            }
+
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="navbar">
+        <span  id="btn-order"  class="order">ORDER</span>
+        <a class="logo" href="#home"><img src="Slike/logo.jpg" alt="logo"></a>
+        <ul class="nav">
+            <li><a href="#delivery"> DELIVERY</a></li>
+            <li><a href="#mobile">MOBILE APP</a></li>
+            <li><a href="#cities">OUR CITIES</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT US</a></li>        
+        </ul>
+     </div>
+
+     <div class="banner-area" id="home"></div>
+     <div class="delivery-area"  id="delivery">
+         <div class="content">
+
+             <h2>DAILY OFFER TOP 4 MEALS - DELIVERY</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             <div class="stupac">
+                    <img src="Slike/Icons/pizzaIcon.png" alt="pizza"  />
+                    <h3>HOKUREN KATAKURI</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stupac">
+                    <img src="Slike/Icons/meat.png" alt="ddd" />
+                    <h3>ASIAN FRIED RICE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stupac">
+                    <img src="Slike/Icons/beer.png" alt="dddf" />
+                    <h3>NONG SHIM SAVORY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="stupac">
+                    <img src="Slike/Icons/restaurant.png" alt="sdsd" />
+                    <h3>NOODLES AND GRAVY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+             
+            </div>
+<!-- gallery -->
+
+    <div class="gallery">
+        <h2>SHOWCASE OF OUR FAVORITE MEALS</h2>
+        <div class="gallery-content">
+                <div class="img-block">
+                    <img src="Slike/Images/Food.jpg" alt="jelo1"/>
+                    <img src="Slike/Images/food-712665_1920.jpg"  alt="jelo2" />
+                    <img src="Slike/Images/meal-918639_1920.jpg" alt="jelo3"/>
+                    <img src="Slike/Images/salmon-1238248_1920.jpg" alt="jelo4"/>
+                    <img src="Slike/Images/salmon-518032_1920.jpg" alt="jelo5"/>
+                    <img src="Slike/Images/sandwich-2301387_1920.jpg" alt="jelo6"/>
+                    <img src="Slike/Images/soup-1429793_1920.jpg" alt="jelo7"/>
+                    <img src="Slike/Images/FrontSlika2.jpg" alt="jelo8"/>
+                </div>
+            </div>
+                
+            
+        </div>
+        <h2>MOBILE APP - CARRIE YOUR FOOD IN YOUR POCKET</h2>
+      
+
+
+
+</div>
+
+     <div class="mobile-area" id="mobile">
+         <div class="content">
+             <div class="mobile-pos">
+                 <img src="Slike/iphone.png" alt="" />
+                </div>
+                 <div class="mobile-pos">
+
+                     <h4> Happy to Announce </h4>
+                     <h1>Mobile App <span>is Available on every platform.</span></h1>
+                     
+                     <a href="https://play.google.com/store/apps"><img src="Slike/google.png" alt="" /></a>
+                     <a href="https://www.apple.com/hr/ios/app-store/"><img src="Slike/apps.png" alt="" /></a>
+                     
+                </div>
+             
+        </div>
+    </div>
+                
+    <div class="cities-area" id="cities">
+       <div class="content">
+           <h2>YOU CAN FIND US IN THESE PLACES</h2>
+   <div id="cities-pos">
+
+   <div class="cities-stupac">
+       <img src="Slike/Cities/aerial-view-ancient-architecture-672532.jpg" alt="London">
+               <h3>LONDON</h3>
+               <div class="social-table">
+                   <img src="Slike/Social icons/person-1824144_640.png" alt="locationL">
+                   <label>Adresa London</label> </br> </br>
+                   <img src="Slike/Social icons/mail-1454731_640.png" alt="mail">
+                   <a href="mailto:myfood@gmail.com">LondonFood@gmail.com</a> </br> </br>
+                   <img src="Slike/Social icons/twitter-2430933_640.png" alt="twit">
+                   <a href="myfood@twitter.com">@LondonFood.com</a>
+               </div>
+           </div>
+           <div class="cities-stupac">
+               <img src="Slike/Cities/architecture-buildings-city-670261.jpg" alt="Madrid">
+               <h3>MADRID</h3>
+               <div class="social-table">
+                   <img src="Slike/Social icons/person-1824144_640.png" alt="locationL">
+                   <label>Adresa Madrid</label> </br> </br>
+                   <img src="Slike/Social icons/mail-1454731_640.png" alt="mail">
+                   <a href="mailto:myfood@gmail.com">MadridFood@gmail.com</a> </br> </br>
+                   <img src="Slike/Social icons/twitter-2430933_640.png" alt="twit">
+                   <a href="myfood@twitter.com">@MadridFood.com</a>
+               </div>
+           </div>
+               <div class="cities-stupac">
+                       <img src="Slike/Cities/empire-state-building-1081929_1920.jpg" alt="NewYork">
+                       <h3>NEW YORK</h3>
+                       <div class="social-table">
+                           <img src="Slike/Social icons/person-1824144_640.png" alt="locationL">
+                           <label>Adresa New York</label> </br> </br>
+                           <img src="Slike/Social icons/mail-1454731_640.png" alt="mail">
+                           <a href="mailto:myfood@gmail.com">NewYorkFood@gmail.com</a> </br> </br>
+                           <img src="Slike/Social icons/twitter-2430933_640.png" alt="twit">
+                           <a href="myfood@twitter.com">@NewYorkFood.com</a>
+                       </div>
+                   </div>
+                   <div class="cities-stupac">
+                       <img src="Slike/Cities/zagreb.jpg" alt="zagreb">
+                       <h3>ZAGREB</h3>
+                       <div class="social-table">
+                               <img src="Slike/Social icons/person-1824144_640.png" alt="locationL">
+                               <label>Adresa Zagreb</label> </br> </br>
+                               <img src="Slike/Social icons/mail-1454731_640.png" alt="mail">
+                               <a href="mailto:myfood@gmail.com">ZagrebFood@gmail.com</a> </br> </br>
+                               <img src="Slike/Social icons/twitter-2430933_640.png" alt="twit"> 
+                               <a href="myfood@twitter.com">@ZagrebFood.com</a>
+                           </div>
+                       </div>
+               </div>
+           </div>
+       </div>
+                       
+            
+            
+
+    <div class="experience-area" id="experience">
+        <div class="content">
+            <h2 style="color:#fff; font-size:3em; ">Satisfied guests</h1>
+
+        <div class="experience-stupac">
+                <div class="user-stupac">
+                    <img src="Slike/Icons/quotes.png" style="width:35px; height:35px;" alt="sl1"/>
+                    <p>Pinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange</p>
+                    <div id="subStupac">
+                            <img src="Slike/Blank.png" alt="sč"/>
+                            <p>Govan Govnic</p>
+                        
+                    </div>
+                </div>
+                <div class="user-stupac">
+                    <img src="Slike/Icons/quotes.png" style="width:35px; height:35px;"  alt="sl3"/>
+                    <p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange</p>
+                    <div id="subStupac">
+                        <img src="Slike/Blank.png" alt="sč"/>
+                        <p>Djeda Pera</p>
+                    </div>
+                </div>
+                <div class="user-stupac">
+                    <img src="Slike/Icons/quotes.png" style="width:35px; height:35px;" alt="sl4" />
+                    <p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange</p>
+                    <div id="subStupac">
+                        <img src="Slike/Blank.png" alt="sl5"/>
+                        <p id="para" >Fran Kopan</p>
+                    </div>
+                </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    
+    <div class="contact-area" id="contact"> 
+        <div class="content-contact">
+            <h2>Contact Us</h2>
+            
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="GET" onsubmit="return validateForm()" >
+            
+            <div class="txt-area">
+                <label>Name :</label>
+                <input type="text" id="txt-name"  placeholder="Enter Your Name">
+            </div>
+            <div class="txt-area">
+                <label>Email :</label>
+                <input type="text" id="txt-email"  placeholder="Enter Your Email">
+            </div>
+            
+         
+           <div class="txt-area">
+               <label>Message importance:</label>
+               <select id="ddlSelect">
+                   <option value="1">High</option>
+                   <option value="2">Medium</option>
+                   <option value="3">Low</option>
+               </select>
+            </div>
+
+
+            
+            <div class="txt-area">
+                <label>Newsletter :</label>
+                <div id="cbNews">
+                    <input id="cbChecked" type="checkbox" checked >
+
+                </div>
+            </div>
+            
+            <div class="txt-area">
+                <label>Message :</label>
+                <textarea id="txtMessage"></textarea>
+            </div>
+            
+            <button type="submit" id="btn-send">Send</button>
+            
+            
+            
+        </form>
+            
+        </div>
+    </div>
+                
+      <div class="footer">
+          <span>DESI&copy;N  BY IGOR KVAKAN </span>
+      </div>
+                
+                
+    <!-- .................................................................   -->
+        
+      <div class="content-order">
+        
+            <h1>Order and Eat</h1>
+            <div class="meni-order">
+               
+                
+            </div>
+                
+                    
+        
+        
+        <div class="order-dialog">
+             <h2>Your orders</h2>
+            
+              <table class="table">
+                 <th>ID</th>
+                 <th>TITLE</th>
+                 <th>QUANTITY</th>
+                 <th>PRICE</th>
+                 
+               
+            </table>    
+        
+            
+           
+
+        </div>
+    </div>
+
+    <!-- subDialog     -->
+
+    <div class="sub-dialog">
+        <table>
+            <tr>
+                <td>
+                    <span data-id=""  class="nazivJela"></span> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Quantity:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" class="quantity-input" min="1" value="1"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtBox">Remark: </label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+           
+        </table>
+    
+    </div>
+            
+    
+
+
+</body>
+</html>
+                        
+                    
+
+    
+                        
+                        
+            
+

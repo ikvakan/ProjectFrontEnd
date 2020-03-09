@@ -1,0 +1,498 @@
+body{
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif; 
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+
+.navbar a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #ffc107;
+}
+
+.navbar span:hover{
+     text-decoration: none;
+     outline: none;
+     color: #ffc107;
+ }
+
+
+.navbar span{
+     color:#fff;
+     cursor:pointer;
+     margin-right: 20px;
+}
+
+
+ .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+ }
+
+
+.navbar span, a, span.meni-jelo {
+     transition: 0.3s ease-in-out;
+}
+
+.nav{
+      display: flex;
+      justify-content:right;
+      list-style: none;
+      margin-left: 15%;
+ }
+.nav li{
+     margin-right: 10px;
+     width: 150px;
+}
+
+
+ .logo img {
+      
+      margin-left: 40%;
+      width: 30px;
+      height: 30px;
+
+ }
+
+ .navbar a{
+      text-decoration: none;
+      margin-right: 40px;
+      color: #fff;
+      
+ }
+
+ .banner-area{
+      position: relative;
+      /* background: linear-gradient(rgba(1,1,1,.5), rgba(0,0,0,.5)),url(Slike/Gif/giphy.gif); */
+      background-image:url(Slike/Gif/giphy.gif);
+  
+      width: 100%;
+      height:100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+ }
+
+ .delivery-area, .mobile-area, .cities-area, .experience-area, .contact-area{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      height: 80%;
+ }
+
+ .content{
+      width:65%;
+      height: 80%;
+ }
+
+.content p{
+     line-height: 1.6em;
+     margin-bottom: 80px;
+}
+
+
+
+ h2{
+      text-align: center;
+      font-size: 2em;
+      
+ }
+
+/* h2:hover{
+     text-decoration: underline;
+     color: #e7a331;
+} */
+
+ /*Delivery*/
+
+ .stupac{
+     float: left;
+     width: 20%;
+     padding-right: 30px;
+     padding-bottom: 80px;
+  }
+  
+  .stupac img{
+        width: 50px;
+     height: 50px;
+  }
+  
+.delivery-area h2 {
+     margin-bottom: 100px;
+}
+
+/* Gallery */
+
+.gallery{
+     overflow: hidden;
+}
+
+.gallery-content{
+   
+     box-sizing:border-box;
+     
+    
+}
+     
+ .img-block{
+      width: 100%;
+      padding-left: 100px;
+ }
+
+
+.img-block img{
+    
+     width:300px;
+     height: 280px;;
+     padding: 3px;
+     width: 20%;
+    
+}
+
+/* Mobile */
+
+.mobile-area{
+     position: relative;
+     background-image: url(Slike/Images/Cover/dinner-egg-flatlay-54455.jpg);
+     width: 100%;
+     height:120vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.mobile-pos{
+     overflow: hidden;
+     float: left;
+     width: 50%;
+}
+.mobile-pos a img{
+     padding-top: 210px;
+}
+
+.mobile-pos h4{
+     color: #ffc107;
+     font-size:1.5em;
+	margin-bottom:30px;
+}
+.mobile-pos span{
+     color: #ffc107;
+}
+.mobile-pos h1{
+     font-size: 2em;
+     text-transform: uppercase;
+     color: honeydew;
+     line-height: 2em;
+}
+
+
+
+  /*Cities*/
+
+
+
+#cities-pos{
+     overflow: auto;
+     padding-top: 60px;
+}
+
+.content h2 {
+     margin-top: 60px;
+}
+.cities-stupac{
+     float: left;
+     width: 25%;
+}
+   
+ .cities-stupac img{
+      width:250px;
+      height:220px;
+ }
+ 
+.social-table img {
+     padding-right: 10px;
+}
+
+
+
+.social-table img{
+     width: 18px;
+     height: 18px;
+}
+
+/*User experience*/
+
+
+
+.experience-area{
+     
+     margin-top: 70px;
+     position: relative;
+     /* background-image: url(Slike/wood-591631_1920.jpg); */
+     background: linear-gradient(rgba(10,10,10,.5), rgba(0,0,0,.5)),
+     url(Slike/wood-591631_1920.jpg);
+     width: 100%;
+     height:100vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+}
+
+
+
+
+.experience-stupac {
+     overflow: hidden;
+     
+}
+ 
+
+.user-stupac p{
+     text-align: justify;
+     font-size: 1em;
+}
+
+.user-stupac{
+     padding-top: 50px;
+     padding-right: 20px;
+     float: left;
+     width: 30%;
+     margin-left: 20px; 
+     color: #fff;
+}
+
+
+#subStupac img{
+     width:200px;
+     height: 200px;
+}
+ 
+
+
+
+
+
+
+/*Contact*/
+
+.contact-area{
+     background-color: #323232;
+     
+}
+
+
+
+.content-contact h2{
+     width: 600px;
+     color: #fff;
+}
+ 
+   .txt-area{
+     border:1px solid gray;
+     margin: 8px 0;
+     padding: 12px 18px;
+     
+     border-radius: 8px;
+   }
+   .txt-area label{
+     display: block;
+     text-align: left;
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 14px;
+   }
+   .txt-area input, .txt-area textarea{
+     width: 100%;
+     border: none;
+     background: none;
+     outline: none;
+     font-size: 18px;
+     margin-top: 6px;
+     color: #fff;
+   }
+
+#cbNews{
+     margin-left: 0;
+     width:30px;
+}
+
+   #btn-send{
+     display: inline-block;
+     background:#e7a331;
+     padding: 14px 0;
+     color: #fff;
+     text-transform: uppercase;
+     cursor: pointer;
+     margin-top: 8px;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 40px;
+     font-size: 1em;
+   }
+   
+/*footer*/
+
+.footer{
+     text-align:center;
+     width: 100%;
+     height: 80px;
+     margin:0;
+     line-height: 80px;
+     background-color: black;
+     color: #fff;
+     
+}
+
+/*................ORDER..............................*/
+.content-order h1{
+     margin: 60px auto  60px; 
+     text-align: center;
+   }
+   
+.content-order h2{
+     text-align: center;
+     background-color: grey;
+     color: #fff;
+     padding: 15px;
+     font-size: 1.5em;
+     font-weight: 100;
+   }
+   
+   .content-order{
+     
+      width:70%;
+      margin: auto;
+   }
+   .meni-table{
+     padding-bottom: 5px;
+     padding-top: 5px;
+     border-bottom: 2px solid grey;
+     table-layout:fixed;
+   }
+   
+   .meni-table #opis{
+        font-size: .9em;
+        color: #afa5a5;
+   }
+   .meni-order{
+     width:45%;
+   float: left;
+   
+   }
+  .meni-table span:hover{
+     color: #e7a331; 
+
+  }
+   
+ .meni-jelo   {
+     cursor: pointer;
+     
+}
+
+
+.meni-order table{
+  width: 100%;
+  text-align: left;
+  
+}
+
+
+   .order-dialog{
+   float: right;
+   width:45%;
+   position: static;
+   
+   }
+   
+   
+   .order-dialog table {
+     width: 100%;
+     text-align: center;
+   }
+   
+   .order-dialog th{
+     border-bottom: 2px solid grey;
+   
+   }
+   
+   .order-dialog tr:nth-child(even) {
+     background-color: #f2f2f2;
+   }
+   
+   #price{
+     background-color: rgb(230, 188, 82);
+     text-align: center;
+     padding: 10px;
+     width: 70px;
+     /* cursor: pointer; */
+   }
+
+   /*.............SubDialog.......*/
+
+
+   .sub-dialog{
+     width:300px;
+     
+   }
+   .sub-dialog textarea{
+     width: 234px;
+   }
+   .sub-dialog span{
+     font-size: 1.5em;
+     font-weight: 300;
+     padding-bottom: 25px;
+   }
+   .quantity-input{
+     width:40px;
+     margin-bottom: 8px;
+    
+
+   }
+   
+   .nazivJela{
+     color: crimson;
+   }
+   #btn-subDialog{
+     width:234px;
+     
+     background-color: crimson;
+     color: #fff;
+     padding: 0;
+   
+   }
+  /*..............ANIM......................*/
+
+  .item-cost{
+ color: crimson;
+ border-bottom:2px solid grey;
+ 
+  }
+
+  .img-block img {
+       overflow: hidden;
+     transition: transform .5s ease;
+	
+}
+.img-block img:hover  {
+     transform: scale(1.03);
+     box-shadow: 0 0 8px #323232;
+     background: #f2f2f2;
+}
+
+/* .............................. */
+
